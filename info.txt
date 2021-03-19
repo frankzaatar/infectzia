@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: infectzia.net/
+site_owner: 
+address1: 1
+address2: 
+city: Netanya 42201
+state: 
+country: Unlisted
+postal_code: 
+phone_number: Unlisted
+display_email: dshraga@hotmail.com
+site_name: אינפקציה
+site_description: ביוגרפיה מפורטת, ארכיון מולטימדיה מקיף, חדשות, לוח הופעות, וקישורים.
