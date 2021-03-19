@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>וורדפרס בעברית &rsaquo; הוראות</title>
+	<style type="text/css" media="screen">
+	<!--
+	html {
+		background: #eee;
+	}
+	body {
+		margin: 0 25%;
+		padding: 1em 2em;
+		background: #fff;
+		color: #000;
+		font-family: "Arial", sans-serif;
+		font-size: 1.0em;
+		font-size: 85%;
+	}
+
+	h1,h2,h3 {
+		font-family: "Times New Roman", serif;
+	}
+
+	.hebrew {
+		unicode-bidi: embed;
+		direction: rtl;
+	}
+	
+	p, li, dt, dd {
+		line-height: 140%;
+		padding-bottom: 2px;
+	}
+
+	ul, ol {
+		padding: 5px 5px 5px 20px;
+	}
+	dd {
+		margin: 0 2.0em 12px 0;
+		padding: 0;
+	}
+
+	li p {
+		padding: 0;
+		margin: 0;
+	}
+	#subtitle {
+		text-align: center;
+		font-weight: bold;
+		font-size: 110%;
+	}
+	.signature {
+		text-align: left;
+		font-style: italic;
+	}
+
+	.signature:before {
+		content:"\2013  ";
+	-->
+	</style>
+</head>
+
+<body>
+
+<div class="hebrew">
+
+<h1 style="text-align: center"><img alt="וורדפרס" src="http://wordpress.org/images/wordpress.gif" /> <br />
+	גרסה <bdo dir="ltr">2.0.5</bdo> בעברית</h1>
+
+<p id="subtitle" style=""> מערכת בלוגים אישית </p>
+
+<h2>הערת המפתח</h2>
+<p>ברוכים הבאים. WordPress היא פרוייקט מיוחד מאוד בשבילי. כל המפתחים והתורמים האחרים מוסיפים משהו למערכת, וביחד אנחנו יוצרים משהו יפהפה שאני גאה להיות חלק בו. אלפי שעות הושקעו ב-WordPress, ואנחנו ממשיכים לשפר אותה מדי יום. תודה לך על שהכנסת אותה לעולם שלך.</p>
+<p class="signature">מאט מולנווג</p>
+
+<h2 id="installation">התקנה - חמש דקות קצרות</h2>
+
+<p>ברוב המקרים, ההתקנה של WordPress יכולה להתבצע כולה דרך הדפדפן. אם פעולות כמו עריכת קובצי PHP נשמעות לכם מדאיגות, פשוט נסו להעלות את כל הקבצים של WordPress לשרת ולגשת לכתובת שלה בדפדפן. עם זאת, זכרו שלא תוכלו להתחמק מדברים כאלה לנצח...</p>
+
+
+<ol>
+			<li>פתחו את הקובץ שהורדתם (wordpress.zip או wordpress.tgz) בתיקיה ריקה.</li>
+
+			<li>פתחו את הקובץ <code>wp-config-sample.php</code> בעורך טקסט )כמו Notepad, לא כמו Word(, ומלאו את פרטי החיבור לבסיס הנתונים, לפי ההוראות.</li>
+
+			<li>שמרו את הקובץ בשם &lrm;<code>wp-config.php</code>&rlm;.</li>
+
+			<li>העלו את הכל לאתר.</li>
+
+			<li>הפנו את הדפדפן לכתובת &lrm;<span class="file"><a href="wp-admin/install.php">/wp-admin/install.php</a></span>&rlm; - תוכנית ההתקנה תתקין את וורדפרס בבסיס הנתונים. אם ההתקנה נכשלת, בדקו את את ההגדרות בקובץ <span class="file">wp-config.php</span>&rlm;. אם ההתקנה עדיין נכשלת, פנו לפורומים עם נתונים רבים ככל האפשר אודות ההתקנה.</li>
+
+			<li><strong>רשמו את הסיסמה במקום בטוח, או בכל אופן זכרו אותה בצורה כלשהיא.</strong></li>
+
+			<li>לחצו על הקישור <a href="wp-login.php">לעמוד הכניסה</a>. הכניסו את שם הכניסה 'admin' ואת הסיסמה שקיבלתם בעמוד הקודם.</li>
+
+			<li>סיימתם את ההתקנה, ואתם נמצאים עתה בממשק הניהול של הבלוג שלכם. מזל טוב!</li>
+
+</ol>
+
+	<h2>שדרוג - שלושה שלבים קלים</h2>
+
+	<p><strong>לפני השדרוג, הכינו גיבויים של כל הקבצים ששיניתם, כמו קובצי העיצוב או תוספים שהתקנתם, וכן של בסיס נתונים שלכם. וורדפרס 2 צריכה לעשות שינויים בבסיס הנתונים בעת שדרוג מגרסאות קודמות, וכדאי מאוד שיהיה לכם גיבוי של כל הפוסטים והתגובות למקרה שמשהו ישתבש. </strong></p>
+
+
+<ol>
+	<li>צרו גיבוי של כל התיקה של וורדפרס, וגבו גם את בסיס הנתונים.</li>
+	<li>העלו את וורדפרס 2.0 על גבי ההתקנה הנוכחית של וורדפרס</li>
+	<li>פתחו את הכתובת &lrm;<span class="file"> <a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a> </span>&rlm; בדפדפן.</li>
+</ol>
+
+	<h2>שינויים בעיצוב</h2>
+	<p>אם עשיתם שינויים בעיצוב הרגיל של וורדפרס, ייתכן שתצטרכו להעלות אותם מחדש לשרת אחרי השדרוג. אם אתם משדרגים מגרסה 1.2 או מגרסה מוקדמת יותר, קראו את <a href="http://codex.wordpress.org/Upgrade_1.2_to_1.5">ההוראות האלה</a>. </p>
+
+<h2 id="hebrew_doc">תיעוד ותמיכה בוורדפרס בעברית</h2>
+
+<p>רוב המידע לגבי הגרסה האנגלית רלבנטי גם לגרסה העברית, אבל עבור כל הסוגיות הקיימות רק בגרסה העברית, ועבור כל מי שמרגישים נוח יותר בעברית, קיימים מספר מקורות לתיעוד ותמיכה בוורדפרס בעברית.</p>
+
+<dl>
+	<dt><a href="http://wiki.wordpress.co.il/">הוויקי של וורדפרס בעברית</a></dt>
+	<dd>הוויקי של וורדפרס בעברית מרכז מידע אודות וורדפרס בעברית עבור משתמשים ומפתחים. אם חסר שם מידע אודות נושא מסוים, תוכלו להוסיף אותו בעצמכם בקלות.</p></dd>
+
+	<dt><a href="http://groups.google.com/group/wpheb">קבוצת הדיון של וורדפרס בעברית בגוגל</a></dt>
+	<dd>קבוצת הדיון של וורדפרס בעברית בגוגל היא המקום הטוב ביותר לקבלת עזרה ממשתמשים ומפתחים של וורדפרס בעברית. כדי לעזור להם לעזור לכם, כתבו כותרות מפורטות ותמציתיות ללהודעות שלכם, ותארו את השאלות באופן המדויק ביותר.</dd>
+
+	<dt><a href="http://www.wphebrew.net/">אתר הוורדפרס של שרית</a></dt>
+	<dd>אתר הוורדפרס של שרית מתעדכן לעיתים קרובות במידע אודות וורדפרס בעברית.</dd>
+
+</dl>
+	
+<h2 id="english_doc">תיעוד ותמיכה בוורדפרס באנגלית</h2>
+
+	<p>ישנם כמה מקורות מקוונים המכילים אוצר בלום של תיעוד ותמיכה בכל הקשור ב-WordPress.</p> 
+	
+<dl>
+	<dt><a href="http://codex.wordpress.org/">The WordPress Codex </a></dt>
+	<dd>"הקודקס" הוא כמו אנציקלופדיה גדולה של כל מה שקשור ל-WordPress. זהו המקור המקיף ביותר למידע על WordPress.</dd>
+
+	<dt><a href="http://wordpress.org/development/">בלוג המפתחים</a></dt>
+	<dd>פה מופיעים עדכונים ופריטי חדשות הקשורים ל-WordPress. שמרו סימניה ובדקו לעיתים קרובות.</dd>
+
+	<dt><a href="http://planet.wordpress.org/">WordPress Planet </a></dt>
+	<dd>"The WordPress Planet" הוא מעין קורא RSS שמאגד חדשות על WordPress מכל רחבי האינטרנט.</dd>
+
+	<dt><a href="http://wordpress.org/support/">הפורומים של WordPress</a></dt>
+	<dd>אם חיפשתם בכל מקום ועדיין לא מצאתם תשובה, הפורומים פעילים מאוד ומארחים קהילת מתשמשים גדולה שתוכל וודאי לעזור.</dd>
+
+	<dt><a href="http://codex.wordpress.org/IRC">ערוץ IRC של WordPress</a></dt>
+	<dd>לבסוף, יש גם ערוץ צ'אט מקוון, שמיועד לאנשים שמשתמשים ב-WordPress, ומדי פעם גם לסוגיות תמיכה. בקישור הנ"ל תמצאו את רוב המידע הנחוץ בשביל להתחבר אליו (irc.freenode.net #wordpresss)</dd>
+</dl>
+
+<h2 id="requirements">דרישות מערכת</h2>
+		
+	<ul>
+		<li>PHP בגרסה <strong>4.1</strong>, או גרסה חדשה יותר.</li>
+		<li>MySQL בגרסה <strong>3.23.23</strong>, או גרסה חדשה יותר.</li>
+		<li>קישור ל-<a href="http://www.trans.co.il/wp/">www.trans.co.il/wp</a> או ל-<a href="http://wordpress.org/">wordpress.org</a> בעמוד הראשי...</li>
+	</ul>
+
+	<h2>רישיון</h2>
+	<p>וורדפרס בעברית מופצת תחת רישיון GPL. הרישיון המלא נמצא בקובץ <a href="license.txt">license.txt</a>.</p>
+
+</div>
+
+<h2>Copyright</h2>
+<p>WordPress is released under the <abbr title="GNU Public License">GPL</abbr> (see <a href="license.txt">license.txt</a>).</p>
+
+</body>
+</html>

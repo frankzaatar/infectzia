@@ -1,0 +1,156 @@
+# Wordpress Hebrew changes
+
+## WordPress Hebrew 2.0.7
+
+	* Replaced initial blogroll with links to local WP developers.
+	
+	* Added Tapuz import plugin, thanks to Hanit for creating it.
+	
+	* Added WordPress import plugins, thanks to Tzafrir for pointing this out to me.
+	
+	* Proper encodings for mail sent from WordPress, thanks to Tom Sella for the fix.
+	
+	* Direct control of feed directionality on RSS Widget, thanks to Tom Sella for the fix.
+	
+	* TinyMCE get directionality right, thanks to Tom Sella for the fix.
+	
+	* Changed default time zone to +2 instead of -8, thanks to Hanan Cohen for pointing this out to me.
+	
+	* Changes from WordPress 2.0.6 and 2.0.7:
+	
+		* Security fix for wp_unregister_GLOBALS() to work around the zend_hash_del_key_or_index bug in PHP 4 versions less than 4.4.3 and PHP 5 versions less than 5.1.4 with register_globals set to “On.”
+		
+		* Feeds now properly serve 304 Not Modified headers instead of mismatched 200/304 headers (a.k.a. the FeedBurner bug).
+		
+		* Backport of another 304 Not Modified fix from WordPress 2.1
+		
+		* Deleting WordPress Pages no longer gives an “Are You Sure?” prompt.
+		
+		* After deleting a WordPress Page, you are now properly redirected to the Edit Pages screen.
+		
+		* Sending an image at original size in Internet Explorer no longer adds an incorrect “height” attribute.
+		
+		* Security fixes.
+		
+		* HTML quicktags now work in Safari browsers.
+		
+		* Comments are filtered to prevent them from messing up your blog layout.
+		
+		* Compatibility with PHP/FastCGI setups.
+
+
+## Wordpress Hebrew 2.0.5
+
+	* Improved browser compatability in themes. Thanks to Artyom.
+
+	* Fixed directionality for form fields where English is often used (email address and URLs, for e.g.).
+
+	* Minor translation fixes.
+
+	* Updated the Database backup plugin to version 1.8.
+
+	* Updated the FeedBurner plugin by Steve Smith to version 2.1, now with support for redirecting the Comment Feed traffic (http://orderedlist.com/wordpress-plugins/feedburner-plugin/).
+
+	* Updated Tom Sella's Diacritics Justification plugin to version 0.6b (http://www.dontsmile.info/my-plugins/plugin-dj_c/) and Comment Direction plugin to version 1.2 (http://www.dontsmile.info/my-plugins/plugin-comment_direction/).
+
+	* Added links to the new Wiki in several places in the Admin interface.
+
+	* Overhauled the ReadMe file, with better installation and upgrade instructions and links to Wiki, google discussion group, and Sarit's WordPress Hebrew site.
+
+	* Added Greymatter import.
+
+	* Changes from WordPress 2.0.5:
+
+		* http://codex.wordpress.org/Changelog/2.0.5
+		
+		* http://markjaquith.wordpress.com/2006/10/17/changes-in-wordpress-205/
+
+## Wordpress Hebrew 2.0.4
+
+	* Added Tom Sella's great Comment Directionality plugin. http://www.dontsmile.info/2006/07/25/comment-direction-wordpress-plugin/
+	
+	* Also update Tom Sella's diacritics justification plugin to 0.5. Thanks Tom!
+
+	* Fixed bug in Edit Link page (Thanks to Yuval Dror)
+	
+	* Administrative: Merged (kinda) the theme and main repository. The old repository will still be around (with its history intact), but from now on I will only maintain themes as part of the main repos and they will be developed and published in sync with Wordpress releases.
+	
+	* Changes from Wordpress 2.0.4:
+	
+		* Security Updates
+		
+		* More than 50 bugs fixed: http://trac.wordpress.org/query?status=closed&milestone=2.0.4
+
+## Wordpress Hebrew 2.0.3.1
+
+	* (Properly) fixed directionality in RSS feeds
+	
+	* Fixed mis-commented comments on TinyMCE
+
+## Wordpress Hebrew 2.0.3
+
+	* Changes from WordPress 2.0.3:
+		
+		* Trac Ticket 2550 - remove smilies uksort.
+		
+		* Trac Ticket 2548 - ent2ncr is very, very slow.
+		
+		* Trac Ticket 2768 - quotation marks are double escaped when editing a comment.
+		
+		* Trac Ticket 2764 - Redirection on comment editing broken.
+		
+		* Trac Ticket 2748 - Some Trac Ticket 2.0.3-beta fixes.
+		
+		* Trac Ticket 2729 - Regular expression bug in sanitize_user.
+		
+		* Trac Ticket 2686 - MT Importer loses Excerpt.
+		
+		* Trac Ticket 2578 - Setting "Show at most N posts" to 0 appears to break Page display (with a 404).
+		
+		* Trac Ticket 2564 - mysql2date() preg_replace() misinterpretation.
+		
+		* Trac Ticket 2553 - update_option action passes newoption serialized.
+		
+		* Trac Ticket 2551 - Redirected enclosures not quite there yet.
+		
+		* Trac Ticket 2463 - get_permalink() performance improvement.
+		
+		* Trac Ticket 2381 - WP error converting URL for a domaini containing "1X".
+		
+		* Trac Ticket 2744 - Typo in moderation.php.
+		
+		* Trac Ticket 2634 - wp_texturize kills some valid entities.
+		
+	* Changes in the local version:
+		
+		* Localized the widget plugin and added widget support on all themes.
+		
+		* Added localized widgets for displaying last.fm stats.
+		
+		* Added localized versions of OL-Feedburner plugin, for redirecting all feeds to FeedBurner, and TimeSince plugin, for displaying the time since a comment or post was written in human-readable form.
+		
+		* Added plugin to fix diacritics alignment issues, by Tom Sella (who wrote the thing on a PDA while doing miluim).
+		
+		* Added <link> tags to headers on all themes.
+		
+		* Added link to Hebrew WordPress Google Group on the administration interface, removed references to the Vanilla forum.
+		
+		* Changed "sipurim" to "postim".
+		
+		* Fixed encoding of subject line on mail sent by WordPress.
+		
+		* Fixed directionality in feeds. Kudos to Grebulon and the Feedreader development team.
+		
+		* Fixed the comment editing page to allow editing comments.
+		
+		* Fixed image uploading feature - WordPress will no longer create thumbnails, and drag-and-drop of uploaded files will always create an image with the right dimensions. Also added instructions for using the upload feature.
+		
+		* Fixed localization of times and dates on the administration interface - no more "@" (at), no more minute:hour.
+		
+		* Fixed quote directionality - fancy quotes now work at end of sentance.
+		
+		* Changed local defaults for new blogs - week starts on Sunday, RSS language is Hebrew.
+		
+		* Fixed directionality on TinyMCE rich editor forms - when adding links and images.
+		
+		* Removed two redundant colons on post writing page.
