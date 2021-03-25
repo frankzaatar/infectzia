@@ -3,4 +3,4 @@
 
 https://frankzaatar.github.io/infectzia
 
-site.infectzia.net
+https://site.infectzia.net
